@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.first{
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.first .navbar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30% 40%;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(0255,255,255,0.9)), url(logo.png);
+    background-size: 110% 100%;  
+}
+
+
+
+
+
+.navbar .logo{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo img{
+    position: relative;
+    width: 60%;
+    height: 40%;
+}
+
+
+
+.first .navbar .nav{
+    /* border: 3px solid red; */
+    position: relative;
+}
+
+.navbar .nav ul{
+    height: 100%;
+    list-style: none;
+    text-transform:  uppercase;
+    display: grid;
+    grid-template-columns: 15% 15% 20% 15% 25%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.nav ul li .a1{
+    color: #FF3271;
+}
+
+.nav ul li a{
+   color: black;
+   text-decoration: none;
+  
+}
+
+.nav ul li a:hover{
+    color: #FF3271;
+}
+
+
+
+
+
+.second{
+    border: 3px solid red;
+    height: 600vh;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr) ;
+    grid-template-columns: 100%;
+}
+
+.second img{
+    width: 100%;
+    height: 100%;
+}
+
+.second .pic{
+    position: relative;
+    border: 2px solid green;
+
+}
+
+.second .pic-1{
+    background-image: url(1-1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.second .pic-2{
+    background-image: url(2-1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.second .pic-3{
+    background-image: url(3-1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.second .pic-4{
+    background-image: url(4-1.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.second .pic-5{
+    background-image: url(5.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.second .pic-6{
+    background-image: url(6.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.second .pic .div1{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    width: 48%;
+    height: 15vh;
+    background: white;
+}
+
+.pic .div1 h1{
+    font-size: 4.4rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+span{
+    color: #ED4F4E;
+}
+
+.pic .div1 h3{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 140%;
+    left: 35%;
+    color: white;
+}
+
+.second .pic-2 .div1 span{
+    color: #EEF091;
+}
+
+.second .pic-3 .div1{
+    top: 40%;
+   width: 70%;
+   left: 15%;
+}
+
+.second .pic-3 .div1 span{
+    color: #0166D5;
+}
+
+.second .pic-4 .div1 span{
+    color: #56DB91;
+}
+
+.second .pic-5 .div1 span{
+    color: #EC5EB2;
+}
+
+
+.second .pic-6 .div1{
+    top: 40%;
+   width: 70%;
+   left: 15%;
+}
+
+.second .pic-6 .div1 span{
+    color: #84418E;
+}
+
+
+
+
+
+
+
+.third{
+    height: 50vh;
+    background: #F4F9FF;
+    display: grid;
+    grid-template-rows: 20% 10% 18%;
+    grid-template-columns: 30%;
+    justify-content: center;
+    align-content: center;
+}
+
+.third .logo{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.third .logo img{
+    height: 70%;
+    width: 50%;
+}
+
+.third .last{
+    display: grid;
+    justify-items: center;
+}
+
+
+
+.third .social{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.third .social i{
+    background: #FF3271;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.third .social i:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+

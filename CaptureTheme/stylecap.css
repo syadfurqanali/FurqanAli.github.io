@@ -1,0 +1,433 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    height: 240vh;
+    border: 3px solid green;
+    background: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.parent1{
+    background: rgb(246, 126, 125); 
+    height: 97vh;
+    display: grid;
+    grid-template-rows: 40vh 45vh 16vh;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo .fa{
+    font-size: 100px;
+}
+
+
+.navbar{
+    /* border: 1px solid yellow; */
+}
+
+.navbar ul{
+    display: grid;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh ;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul a{
+    color: black;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+}
+
+
+.navbar ul a::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 0;
+    height: 10%;
+    background: rgb(7, 6, 6);
+    transition: all .10s;
+    overflow: hidden;
+}
+
+.navbar ul a:hover::after{
+    width: 100%;
+    transition: all .5s;
+}
+
+.social{
+    display: grid;
+    justify-content: center;
+    background: rgb(246, 126, 125); 
+}
+
+.social h1{
+    height: 50%;
+}
+  
+
+
+.social .icons{
+    font-size: 20px;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.parent2{
+    display: grid;
+    grid-template-rows: 150vh 90vh;
+    background: black;
+}
+
+.images{
+    background: black;
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto ;
+    position: relative;
+}
+
+.images .flip{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_1.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.images .flip1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_2.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.images .flip2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_3.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_4.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_5.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_6.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_7.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip7{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_8.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip8{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_9.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip9{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_10.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+.images .flip10{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_11.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.images .flip11{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    background-image: url(image_12.jpg);
+    background-size: 100% 100%;
+    transform: translate(-50%, -50%);
+}
+ .card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    /* background: pink; */
+}
+
+.card:hover{
+    transform: rotatey(180deg);
+    opacity: 1;
+}
+
+.front{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    backface-visibility: hidden;
+    /* background: #ffc728; */
+}
+
+
+ .back{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    backface-visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.2);    
+    transform: rotatey(180deg);
+}
+
+.back h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+
+
+.images img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+.footer{
+    background: black;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+.footer .footer1{
+    color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-evenly;
+}
+
+.footer .footer1 .category{   
+    display: grid;
+    grid-template-rows:30%  70%;
+}
+
+
+.category .head{
+    color: white;
+    display: grid;
+    align-items: center;
+}
+
+.category .para{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15%;
+}
+
+.category .para .d1-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category .para .d1{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.footer1 .archives{
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.archives .head{
+    color: white;
+    display: grid;
+   align-content: center;
+   /* justify-content: center; */
+}
+
+
+.archives .para{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+}
+
+.archives .para .d1-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+
+.archives .para .d1{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+   
+
+
+.footer1 .question{
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.question .head{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.question .para{
+    display: grid;
+    grid-template-rows: 20% 20% 20%;
+}
+
+ .para i{
+     display: grid;
+     grid-template-columns: 20% 80%;
+     font-size: 30px;
+ }
+
+ .para h3{
+     font-size: 20px;
+ }
+
+.footer .footer2{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.first{
+    width: 100%;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.first .navbar{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 18% 20% 35%;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(255,255,255,0.9),rgba(0255,255,255,0.9)), url(logo.png);
+    background-size: 110% 100%;  
+}
+
+
+
+.navbar .social{
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 40%;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.navbar .social i{
+    background: #FF3271;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.navbar .social i:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+
+
+
+.navbar .logo{
+    position: relative;
+    left: 40%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 80%;
+    height: 40%;
+}
+
+
+
+
+.first .navbar .nav{
+    /* border: 3px solid red; */
+    position: relative;
+    left: 5%;
+}
+
+.navbar .nav ul{
+    height: 100%;
+    list-style: none;
+    text-transform:  uppercase;
+    display: grid;
+    grid-template-columns: 15% 15% 20% 15% 25%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.nav ul li .a1{
+    color: #FF3271;
+}
+
+.nav ul li a{
+   color: black;
+   text-decoration: none;
+  
+}
+
+.nav ul li a:hover{
+    color: #FF3271;
+}
+
+
+
+
+.second{
+    height: 340vh;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+.second .text{
+    position: relative;
+}
+
+.text .ball{
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #FFE991;
+}
+
+.text h1{
+    position: absolute;
+    font-size: 4.7rem;
+    font-weight: bolder;
+    top: 33%;
+    left: 33%;
+}
+
+
+.second .pic{
+    display: grid;
+    grid-template-columns: 55% 35%;
+    justify-content: space-evenly;
+}
+
+
+.pic .pic-left{
+    position: sticky;
+    top: 12%;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 18% 21% 12% 12% 12% 12%;
+    align-content: space-evenly;
+}
+ 
+.pic-left h1{
+    font-weight: bolder;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    cursor: default;
+    display: grid;
+    align-content: center;
+}
+
+.pic-left p{
+    font-size: .9rem;
+    line-height: 1.5rem;
+    color: grey;
+}
+
+.pic-left h2{
+    display: grid;
+    align-content: center;
+    font-weight: bolder;
+    font-size: .9rem;
+    color: grey;
+    font-weight: lighter;
+}
+
+.pic-left h2 span{
+    font-size: 1rem;
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+.pic .pic-right{
+    display: grid;
+    grid-template-rows: 32% 32% 32%;
+    row-gap:30px;
+}
+
+.pic .pic-right .photo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.third{
+    height: 50vh;
+    background: #F4F9FF;
+    display: grid;
+    grid-template-rows: 20% 10% 18%;
+    grid-template-columns: 30%;
+    justify-content: center;
+    align-content: center;
+}
+
+.third .logo{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.third .logo img{
+    height: 70%;
+    width: 50%;
+}
+
+.third .last{
+    display: grid;
+    justify-items: center;
+}
+
+
+
+.third .social{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: 40px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.third .social i{
+    background: #FF3271;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.third .social i:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+
+

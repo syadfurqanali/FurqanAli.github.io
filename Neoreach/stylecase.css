@@ -1,0 +1,1747 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.first{
+    width: 100%;    
+    height: 20vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 45% 25%;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.first .logo{
+    /* border: 1px solid rgb(126, 12, 97);r */
+    display: grid;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+
+.first ul{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 20% 20% 24% 18% 18%;
+}
+
+.first ul li{
+    /* border: 1px solid green; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+ul li a{
+    text-decoration: none;
+    /* border: 1px solid green; */
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+ul li a::after{
+     content: '';
+     width: 100%;
+     height: 50%;
+     background-image: url(underline@2x.png);
+     background-size: 100% 100%;
+     position: absolute;
+     top: 50%;
+     left: -100%;
+     z-index: -1;
+     transition: 1s;
+}
+
+ul li a:hover::after{
+    left: 0;
+    transition: 1s;
+}
+ 
+
+.first .btn{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.btn h1{
+    /* border: 1px solid green; */
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn button{
+    background: #00B8A1;
+    width: 70%;
+    height: 40%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn img{
+    position: absolute;
+    z-index: -1;
+    width: 35%;
+    height: 40%;
+    top: 40%;
+    left: 49%;
+}
+
+
+
+
+
+.second{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh 55vh;
+    grid-template-columns: minmax(10%,75%);
+    align-content: space-around;
+    justify-content: center;
+}
+
+.second .text{
+    display: grid;
+}
+
+.second .text h1{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.second .text p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+
+
+
+.second .pic{
+    background-image: url(cs-hero-base@2x.png);
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.second .pic .img1{
+    position: absolute;
+    height: 25%;
+    top: 55%;
+}
+
+.second .pic .img2{
+    position: absolute;
+    height: 78%;
+    top:  22%;
+    left: 11%;
+}
+
+.second .pic .box{
+    position: relative;
+    top: 93px;
+    left: 213px;
+    border: 1px solid black;
+    background: rgb(218, 218, 146);
+    width: 22px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.second .pic .box .ball{
+    width: 5px;
+    height: 4px;
+    border: 1px solid black;
+    background: rgb(218, 218, 146);
+    position: absolute;
+    top: -22%;
+    left: 15%;
+    border-radius: 50%;
+    animation: movv 2s linear infinite;
+}
+
+@keyframes movv{
+    0%{
+        left:15%;
+    }
+    50%{
+       left: 73%;
+    }
+    100%{
+         left: 15%;
+    }
+}
+
+.second .pic .box2{
+    position: relative;
+    top: 108px;
+    left: 213px;
+    border: 1px solid black;
+    background: rgb(218, 218, 146);
+    width: 22px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.second .pic .box2 .ball{
+    width: 5px;
+    height: 4px;
+    background: rgb(218, 218, 146);
+    position: absolute;
+    top: -22%;
+    left: 15%;
+    border-radius: 50%;
+    animation: movv 2s linear infinite;
+}
+
+@keyframes movv{
+    0%{
+        left:15%;
+    }
+    50%{
+       left: 73%;
+    }
+    100%{
+         left: 15%;
+    }
+}
+
+.second .pic .img3{
+    position: absolute;
+    height: 23%;
+    top:  77%;
+    left: 25%;
+}
+
+.second .pic .img4{
+    position: absolute;
+    height: 85%;
+    top:  15%;
+    left: 27%;
+}
+
+.second .pic .img5{
+    position: absolute;
+    height: 77%;
+    top:  23%;
+    left: 75%;
+}
+
+.second .pic .img6{
+    position: absolute;
+    height: 23%;
+    top:  80%;
+    left: 45%;
+}
+
+.second .pic .img7{
+    position: absolute;
+    height: 22%;
+    top: 25%;
+    left: 50%;
+   animation: updo 3s linear infinite;
+}
+@keyframes updo{
+    0%{
+        top:25%;
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        top: 25%;
+    }
+}
+
+.second .pic .img8{
+    position: absolute;
+    height: 23%;
+    top: 60%;
+    left: 55%;  animation: updo1 3s linear infinite;
+    animation-delay: .5s;
+}
+@keyframes updo1{
+    0%{
+        top:60%;
+    }
+    50%{
+        top: 65%;
+    }
+    100%{
+        top: 60%;
+    }
+}
+
+.second .pic .img9{
+    position: absolute;
+    height: 23%;
+    top: 35%;
+    left: 65%;  animation: updo2 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes updo2{
+    0%{
+        top:35;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 35%;
+    }
+}
+
+.second .pic .img10{
+    position: absolute;
+    height: 25%;
+    top: 75%;
+    left: 65%;
+}
+
+.second .pic .img11{
+    position: absolute;
+    height: 25%;
+    top: 50%;
+    left: 91%; 
+     animation: updo3 3s linear infinite;
+    animation-delay: .7s;
+}
+@keyframes updo3{
+    0%{
+        top:50%;
+    }
+    50%{
+        top: 55%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+
+.second .pic .img12{
+    position: absolute;
+    height: 42%;
+    transform: rotate(75deg);
+    top: 15%;
+    left: 29%;
+}
+
+.second .pic .tower{
+    position: absolute;
+    top: 162px;
+    left: 772px;
+    width: 5px;
+    height: 13px;
+    transform: rotate(-10deg);
+    background: rgb(238, 238, 135);
+}
+
+.second .pic .tower2{
+    width: 5px;
+    height: 19px;
+    top: 156px;
+    left: 785px;
+}
+
+.second .pic .tower3{
+    width: 5px;
+    height: 14px;
+    top: 159px;
+    left: 799px;
+}
+
+.second .pic .tower4{
+    width: 5px;
+    height: 20px;
+    top: 152px;
+    left: 813px;
+}
+
+.second .pic .tower5{
+    width: 5px;
+    height: 15px;
+    top: 155px;
+    left: 828px;
+}
+
+.second .pic .tower6{
+    width: 5px;
+    height: 22px;
+    top: 147px;
+    left: 842px;
+}
+
+.second .pic .tower7{
+    width: 5px;
+    height: 26px;
+    top: 140px;
+    left: 856px;
+}
+
+.second .pic .tower8{
+    width: 6px;
+    height: 66px;
+    top: 100px;
+    left: 866px;
+    background: rgb(223, 150, 150);
+}
+
+.second .pic .img13{
+    position: absolute;
+    height: 30%;
+    top:  16%;
+    left: 81%;
+    z-index: -1;
+}
+
+.second .pic .img14{
+    position: absolute;
+    height: 12%;
+    top:  21%;
+    left: 836px;
+    animation: opa 2s linear infinite;
+}
+@keyframes opa{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.third{
+    width: 100%;
+    height: 140vh;
+    display: grid;
+    grid-template-rows: 20% 70%;
+    align-content: center;
+}
+
+
+.third .pic-move{
+    position: relative;
+    overflow: hidden;
+}
+
+.third .pic-move .img-1{
+    position: absolute;
+    height: 30%;
+    right: -20%;
+    animation: mov 14.5s linear infinite;
+    top: 35%;
+   
+}
+@keyframes mov{
+    0%{
+        right: -20%;
+    }
+    100%{
+        right: 120%;
+    }
+}
+
+.third .pic-move .img-1:hover{
+    transform: scale(1.1);
+}
+
+.third .pic-move .img2{
+    animation-delay: 1.8s;
+}
+
+.third .pic-move .img3{
+    animation-delay: 3.6s;
+}
+
+.third .pic-move .img4{
+    animation-delay: 5.4s;
+}
+
+.third .pic-move .img5{
+    animation-delay: 7.2s;
+}
+
+.third .pic-move .img6{
+    animation-delay: 9s;
+}
+
+.third .pic-move .img7{
+    animation-delay: 10.8s;
+}
+
+.third .pic-move .img8{
+    animation-delay: 12.6s;
+}
+
+
+.third  .boxes{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 90%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.third  .boxes .box{
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 10% 25% 30% 20%;
+    justify-items: center;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.third  .boxes .box .logo{
+    height: 13%;
+}
+
+.third .boxes .box p{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.third .boxes .box .square{
+    border-bottom: 1px solid gray;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 50% 50%;
+
+}
+
+.third .boxes .box .square .left{
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.third .boxes .box .square .left img{
+    height: 35%;
+}
+
+.third .boxes .box .square .left h1{
+    font-size: 2.1rem;
+}
+
+.third .boxes .box .square .left p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+
+.third .boxes .box .square .right{
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.third .boxes .box .square .right img{
+    height: 35%;
+}
+
+.third .boxes .box .square .right h1{
+    font-size: 2rem;
+}
+
+.third .boxes .box .square .right p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+
+
+.third .boxes .box button{
+    background: #00B8A1;
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    top: 15%;
+    z-index: 1;
+}
+
+.third .boxes .box button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.third .boxes .box .line{
+    position: absolute;
+    height: 7%;
+    top: 84%;
+    left: 37%;
+}
+
+
+.third .boxes .box .btn{
+    width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-around;
+}
+
+.third .boxes .box .btn .line{
+    position: absolute;
+    width: 40%;
+    height: 36%;
+    top: 34%;
+    left: 14%;
+}
+
+
+.third .boxes .box .btn button{
+       position: relative;
+       top: 15%;
+       width: 88%;
+       height: 8vh;
+       border-style: none;
+}
+
+.third .boxes .box .btn button:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.third .boxes .box .btn .pic{
+    width: 100%;
+    background-image: url(play-btn@2x.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.third .boxes .box .btn .pic .arow{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+.forth{
+    width: 100%;
+    height: 110vh;
+    display: grid;
+    grid-template-rows: 95%;
+    align-content: center;
+}
+
+.forth   .boxes{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 90%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.forth .boxes .box{
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 10% 25% 30% 20%;
+    justify-items: center;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.forth  .boxes .box .logo{
+    height: 13%;
+}
+
+.forth .boxes .box p{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.forth .boxes .box .square{
+    border-bottom: 1px solid gray;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 50% 50%;
+
+}
+
+.forth .boxes .box .square .left{
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.forth .boxes .box .square .left img{
+    height: 35%;
+}
+
+.forth .boxes .box .square .left h1{
+    font-size: 2.1rem;
+}
+
+.forth .boxes .box .square .left p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    display: grid;
+    align-items: center;
+}
+
+
+.forth .boxes .box .square .right{
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.forth .boxes .box .square .right img{
+    height: 35%;
+}
+
+.forth .boxes .box .square .right h1{
+    font-size: 2rem;
+}
+
+.forth .boxes .box .square .right p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    display: grid;
+    align-items: center;
+}
+
+
+
+.forth .boxes .box button{
+    background: #00B8A1;
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    top: 15%;
+    z-index: 1;
+}
+
+.forth .boxes .box button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.forth .boxes .box .line{
+    position: absolute;
+    height: 7%;
+    top: 84%;
+    left: 37%;
+}
+
+
+.forth .boxes .box .btn{
+    width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-around;
+}
+
+.forth .boxes .box .btn .line{
+    position: absolute;
+    width: 40%;
+    height: 36%;
+    top: 34%;
+    left: 14%;
+}
+
+
+.forth .boxes .box .btn button{
+       position: relative;
+       top: 15%;
+       width: 88%;
+       height: 8vh;
+       border-style: none;
+}
+
+.forth .boxes .box .btn button:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.forth .boxes .box .btn .pic{
+    width: 100%;
+    background-image: url(play-btn@2x.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.forth .boxes .box .btn .pic .arow{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+
+.fivth{
+    width: 100%;
+    height: 110vh;
+    display: grid;
+    grid-template-rows: 95%;
+    align-content: center;
+}
+
+.fivth   .boxes{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 90%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.fivth .boxes .box{
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 10% 25% 30% 20%;
+    justify-items: center;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.fivth  .boxes .box .logo{
+    height: 13%;
+}
+
+.fivth .boxes .box p{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.fivth .boxes .box .square{
+    border-bottom: 1px solid gray;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 50% 50%;
+
+}
+
+.fivth .boxes .box .square .left{
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.fivth .boxes .box .square .left img{
+    height: 35%;
+}
+
+.fivth .boxes .box .square .left h1{
+    font-size: 2.1rem;
+}
+
+.fivth .boxes .box .square .left p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    display: grid;
+    align-items: center;
+}
+
+
+.fivth .boxes .box .square .right{
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.fivth .boxes .box .square .right img{
+    height: 35%;
+}
+
+.fivth .boxes .box .square .right h1{
+    font-size: 2rem;
+}
+
+.fivth .boxes .box .square .right p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: .8rem;
+    display: grid;
+    align-items: center;
+}
+
+
+
+.fivth .boxes .box button{
+    background: #00B8A1;
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    top: 15%;
+    z-index: 1;
+}
+
+.fivth .boxes .box button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.fivth .boxes .box .line{
+    position: absolute;
+    height: 7%;
+    top: 84%;
+    left: 37%;
+}
+
+.fivth .boxes .box .btn{
+    width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-around;
+}
+
+.fivth .boxes .box .btn .line{
+    position: absolute;
+    width: 40%;
+    height: 36%;
+    top: 34%;
+    left: 14%;
+}
+
+
+.fivth .boxes .box .btn button{
+       position: relative;
+       top: 15%;
+       width: 88%;
+       height: 8vh;
+       border-style: none;
+}
+
+.fivth .boxes .box .btn button:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.fivth .boxes .box .btn .pic{
+    width: 100%;
+    background-image: url(play-btn@2x.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.fivth .boxes .box .btn .pic .arow{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+.sliderr
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-content: space-around;
+    grid-template-rows: 20% 40% 20%;
+    justify-items: center;
+    background: #FFE8EB;
+}
+.sliderr>img
+{
+    height: 100%;
+}
+.sliderr-inner
+{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: 90%;
+}
+.sliderr-inner .labels
+{
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.labels:nth-child(2)
+{
+    background: black;
+    position: absolute;
+    bottom: 0px;
+    left:45%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: left;
+}
+.slider-switch
+{
+    display: none;
+}
+.sliderr-inner-detail-1
+{
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:80%;
+    text-align: center;
+}
+.sliderr-inner-detail-2
+{
+    /* display: inline-block; */
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:80%;
+    text-align: center;
+}
+.sliderr-inner-detail>h1
+{
+    text-align: center;
+    color: black;
+}
+.slider-switch:checked+.labels+.sliderr-inner-detail-1
+{
+    opacity: 1;
+    left: 0;
+    transition-duration: 1s;
+}
+.slider-switch:checked+.labels+.sliderr-inner-detail-2
+{
+    opacity: 1;
+    right: 0;
+    transition-duration: 1s;
+}
+.slider-switch:not(:checked)+.labels+.sliderr-inner-detail-1
+{
+    opacity: 0;
+}
+.slider-switch:not(:checked)+.labels+.sliderr-inner-detail-2
+{
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.eight{
+    width: 100%;
+    height: 190vh;
+    position: relative;
+}
+
+.eight .pic{
+    width: 95%;
+    height: 70vh;
+    position: relative;
+    top: 10vh;
+}
+
+.eight .pic .hero{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+}
+
+.eight .pic .line{
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 40vh;
+    left: 6%;
+    overflow: hidden;
+}
+
+.eight .pic .line .line-1{
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    animation: lin 6s linear infinite;
+}
+
+.eight .pic .line .im1{
+    animation-delay: 3s;
+}
+
+
+@keyframes lin{
+    0%{
+       transform: translate(0%);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
+
+.eight .pic .dots{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 21%;
+    top: 15vh;
+}
+
+.eight .pic .dots .dot{
+    color: rgb(252, 182, 205);
+    font-size: 5rem;
+    top: -70%;
+}
+
+.eight .pic .dots .dot2{
+    position: absolute;
+    top: -50%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot3{
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot4{
+    position: absolute;
+    top: -30%;
+    color: rgb(212, 175, 247);
+}
+
+.eight .pic .dots .dot5{
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot6{
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot7{
+    position: absolute;
+    top: -10%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot8{
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    color: rgb(208, 126, 247);
+}
+
+.eight .pic .dots .dot9{
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    color: rgb(0, 255, 170);
+}
+
+.eight .pic .dots .dot10{
+    position: absolute;
+    top: -10%;
+    left: 60%;
+    border-radius: 50%;
+    color: rgb(179, 247, 247);
+}
+
+
+.eight .pic .dots1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 0%;
+    top: 4vh;
+}
+
+.eight .pic .talk1{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 3%;
+    left: 22%;
+    z-index: -1;
+    animation: up1 3s linear infinite;
+}
+
+@keyframes up1{
+    0%{
+        top: 3%;
+    }
+    50%{
+        top: 6%;
+    }
+    100%{
+        top: 3%;
+    }
+}
+
+.eight .pic .talk2{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 35%;
+    left: 40%;
+    z-index: -1;
+    animation: up2 2.9s linear infinite;
+}
+
+@keyframes up2{
+    0%{
+        top: 35%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 35%;
+    }
+}
+
+.eight .pic .talk3{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 90%;
+    left: 0%;
+    animation: up3 2.5s linear infinite;
+}
+
+@keyframes up3{
+    0%{
+        top: 90%;
+    }
+    50%{
+        top: 93%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+.eight .pic .hori{
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    background: aqua;
+    position: relative;
+    top: 43%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.eight .pic .hori .lin{
+    width: 100%;
+    position: absolute;
+    top: 48%;
+   
+}
+
+.eight .pic .hori .srch{
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -4%;
+    z-index: 1;
+}
+
+.eight .pic .hori .spot{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: spot 1.7s linear infinite;
+}
+
+@keyframes spot{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+
+
+.eight .form{
+    width: 95%;
+    height: 110vh;
+    position: relative;
+    background: #E7FEF8;
+    top: 0;
+    left: 3%;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 30% 50% 10%;
+    align-content: center;
+    justify-items: center;
+}
+
+.eight .form .head{
+    display: grid;
+    grid-template-rows: 30% 60%;
+}
+
+.eight .form .head h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.eight .form .head p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.eight .form .table{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.eight .form .table .left{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .left input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+.eight .form .table .left h1{
+    font-size: 2rem;
+}
+
+.eight .form .table .right{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .right input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+
+
+.eight .form .footer{
+    width: 20%;
+    position: relative;
+}
+
+.eight .form .footer .btn4{
+    width: 100%;
+    height: 86%;
+    border-radius: 10px;
+    border-style: none;
+    background: #00B8A1;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.eight .form .footer .btn4:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.eight .form .footer .under-line{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+
+.eight .side{
+    width: 16%;
+    height: 65vh;
+    position: absolute;
+    top: 62%;
+    right: 0;
+}
+
+.eight .side .frame{
+    height: 100%;
+    position: absolute;
+}
+
+.eight .side .upper{
+    height: 37%;
+    position: absolute;
+    top: 33%;
+    left: 9%;
+}
+
+.eight .side .float1{
+    height: 9%;
+    position: absolute;
+    top: 0;
+    left: 51%;
+    animation: flo 3s linear infinite;
+}
+
+@keyframes flo{
+    0%{
+        top: -1%;
+    }
+    50%{
+        top: 2%;
+    }
+    100%{
+        top: -1%;
+    }
+}
+
+.eight .side .float2{
+    height: 13%;
+    position: absolute;
+    top: 6%;
+    left: 65%;
+    animation: flo1 2.5s linear infinite;
+}
+
+@keyframes flo1{
+    0%{
+        top: 6%;
+    }
+    50%{
+        top: 9%;
+    }
+    100%{
+        top: 6%;
+    }
+}
+
+.eight .side .float3{
+    height: 10%;
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    animation: flo2 2.3s linear infinite;
+}
+
+@keyframes flo2{
+    0%{
+        top: 11%;
+    }
+    50%{
+        top: 13%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+
+
+  
+
+
+
+
+.ninth{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40% 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.ninth .head{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 30% 40%;
+}
+
+.ninth .head .logo{
+    position: relative;
+    left: 30%;
+}
+
+.ninth .head .logo .seal{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.ninth .head .text{
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    position: relative;
+    /* justify-items: center; */
+}
+
+.ninth .head .text .logo{
+    height: 11%;
+}
+
+.ninth .head .text p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.ninth .head .text .social{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninth .head .text .social i{
+    padding: 16px 20px;
+    width: 14%;
+    height: 17%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0pc #A2FDE9;
+    color: #00C8AF;
+    font-size: 1.1rem;
+}
+
+.ninth .head .text .social i:hover{
+    background: black;
+    color: #A2FDE9;
+    transition: 1s;
+}
+
+
+
+.ninth .footer{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 90%;
+}
+
+.ninth .footer .box{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    align-content: space-between;
+}
+
+.ninth .footer .box h1{
+    font-size: 1.1rem;
+}
+
+.ninth .footer .box h2{
+    font-size: .9rem;
+}
+
+
+
+
+
+
+.designer{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 40% 25%;
+    justify-content: space-between;
+}
+
+.designer p{
+    position: relative;
+    left: 10%;
+}
+
+.designer h5{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.designer span{
+    font-size: 1.1rem;
+}
+
+.designer span:hover{
+    color: #00B8A1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1321 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.first{
+    width: 100%;
+    height: 20vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 45% 25%;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.first .logo{
+    /* border: 1px solid rgb(126, 12, 97);r */
+    display: grid;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+
+.first ul{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 20% 20% 24% 18% 18%;
+}
+
+.first ul li{
+    /* border: 1px solid green; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+ul li a{
+    text-decoration: none;
+    /* border: 1px solid green; */
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+ul li a::after{
+     content: '';
+     width: 100%;
+     height: 50%;
+     background-image: url(underline@2x.png);
+     background-size: 100% 100%;
+     position: absolute;
+     top: 50%;
+     left: -100%;
+     z-index: -1;
+     transition: 1s;
+}
+
+ul li a:hover::after{
+    left: 0;
+    transition: 1s;
+}
+ 
+
+.first .btn{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.btn h1{
+    /* border: 1px solid green; */
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn button{
+    background: #00B8A1;
+    width: 70%;
+    height: 40%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn img{
+    position: absolute;
+    z-index: -1;
+    width: 35%;
+    height: 40%;
+    top: 40%;
+    left: 49%;
+}
+
+
+
+
+
+.second{
+    width: 100%;
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 20vh 80vh;  
+    align-content: space-around;
+    overflow: hidden;
+}
+
+.second .text{
+    /* border: 1px solid red; */
+}
+
+.second .text h1{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+.second .text p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #000;
+}
+
+
+.second .two{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: 95%;
+    justify-content: end;
+    align-content: end;
+}
+
+
+.second .two .left{
+    position: relative;
+    display: grid;
+    grid-template-rows:  13% 58% 20%;
+    align-content: center;
+}
+
+.second .two .left h1{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+
+.second .two .left p{
+    line-height: 1.9em;
+}
+
+.second .two .left button{
+    width: 25%;
+    height: 8vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    border-style: none;
+    z-index: 1;
+}
+
+.second .two .left button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.second .two .left .line{
+    position: absolute;
+    height: 8%;
+    top: 81%;
+    left: 6%;
+}
+
+.second .two .right{
+    position: relative;
+}
+
+.second .two .right .main{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 90%;
+}
+ 
+.second .two .right .cirl{
+    position: absolute;
+    top: 15%;
+    left: 81%;
+    width: 200px;
+    height: 200px;
+    z-index: -3;
+} 
+
+.second .two .right .ball{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 25%;
+      left: 83%;
+}
+
+.second .two .right .upper{
+    position: absolute;
+    top: 47%;
+    left: 21%;
+    width: 435px;
+    height: 200px;
+    overflow: hidden;
+} 
+
+.second .two .right .upper .graph{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.second .two .right .upper .upper-1{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    right: -200%;
+    opacity: 0.3;
+    animation: wav 5s linear infinite;
+}
+
+@keyframes wav{
+    0%{
+        transform: translate(0%);
+    }
+ 
+    100%{
+     transform: translate(-99%);
+    }
+ }
+
+
+.second .right .graf{
+    position: relative;
+    height: 13%;
+    top: 74%;
+}
+
+
+
+
+
+
+.third{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+}
+
+.third .mid{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: center;
+}
+
+.third .mid .right{
+    position: relative;
+}
+
+.third .mid .right .box{
+    width: 100%;
+    height: 100%;
+}
+
+.third .mid .right .upper{
+    width: 390px;
+    height: 320px;
+    background: #00B8A1;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+ .mid .right .upper .upper-1{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     bottom: -100%;
+     animation: top 4s linear infinite;
+     
+ }
+
+ @keyframes top{
+    0%{transform: translatey(0%);
+ 
+    }
+ 
+    100%{
+     transform: translatey(-200%);
+    }
+ }
+
+ .mid .right .upper .up2{
+    animation-delay: 2s;
+}
+
+
+.mid .right .square-1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 35%;
+    z-index: -1;
+}
+
+.mid .right .square-2{
+    position: absolute;
+    top: 0%;
+    left: 73%;
+    height: 35%;
+    z-index: -1;
+}
+
+
+
+.third .mid .left{
+    display: grid;
+    grid-template-rows: 25% 50% 20%;
+    align-content: center;  
+}
+
+.third .mid .left h1{
+    font-size: 2.3rem;
+    line-height: 1.3em;
+}
+
+.third .mid .left p{
+    line-height: 1.7em;
+}
+
+.third .mid .left button{
+    width: 27%;
+    height: 8vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    border-style: none;
+    z-index: 1;
+}
+
+.third .mid .left button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.third .mid .left .line{
+    height: 9%;
+    position: absolute;
+    top: 81.3%;
+    left: 59.5%;
+}
+
+
+
+
+
+.forth{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 90%;
+    justify-content: center;
+    align-content: center;
+}
+
+.forth .text{
+    display: grid;
+    grid-template-rows: 15% 40% 20%;
+    align-content: center;
+}
+
+.forth .text h1{
+    font-size: 1.9rem;
+}
+
+.forth .text p{
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+}
+
+.forth .text button{
+    width: 27%;
+    height: 8vh;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-style: none;
+}
+
+
+.forth .pic{
+    position: relative;
+}
+
+
+
+.forth .pic .api-1{
+    height: 80%;
+    position: absolute;
+    top: 10%;
+}
+
+.forth .pic .vib{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(api2-dot.svg);
+    position: relative;
+    top: 19%;
+    left: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forth .pic .vib::before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 50%;
+    animation: vib 3s linear infinite;
+}
+
+.forth .pic .vib::after{
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    box-shadow: 0 0 30px blueviolet;
+    border-radius: 50%;
+    animation: vib 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes vib{
+    0%{
+        transform: scale(0.5); opacity:0;
+    }
+
+    50%{
+        transform: scale(1); opacity:1;
+    }
+
+    100%{
+        transform: scale(1.5); opacity:0;
+    }
+}
+
+.forth .pic .facbok{
+    height: 5%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation: fb 2.5s linear infinite;
+}
+
+@keyframes fb{
+     0%{
+      top:20%;
+     }
+
+     25%{
+        top:24%; left: 7%;
+        }
+
+     50%{
+      top: 25%; left: 10%;
+      }
+      75%{
+          top: 23%; left:10%;
+      }
+     100%{
+        top:21%;  left: 9%;
+          }   
+}
+
+.forth .pic .utub{
+    height: 5%;
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    animation: you 4s linear infinite;
+}
+
+@keyframes you{
+     0%{
+      top:25%;
+     }
+
+    50%{
+        top: 28%; left: 15%;
+      }
+
+     100%{
+        top:26%;  left: 18%;
+     }  
+}
+
+.forth .pic .twtr{
+    height: 5%;
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    animation: twtr 3s linear infinite;
+}
+
+@keyframes twtr{
+     0%{
+      top:32%;
+     }
+
+     25%{
+        top:35%; left: 4%;
+        }
+
+     50%{
+      top:37%; left: 6%;
+      }
+      75%{
+          top: 35%; left:6%;
+      }
+     100%{
+        top:33%;  left: 5%;
+     }
+}
+
+
+.forth .pic .insta{
+    height: 5%;
+    position: absolute;
+    top: 35%;
+    left: 19%;
+    animation: insta 5s linear infinite;
+}
+
+@keyframes insta{
+     0%{
+      top:35%;
+     }
+
+     50%{
+        top: 39%; left: 15%;
+        }
+
+     100%{
+        top:36%;  left: 19%;
+     }  
+}
+
+
+
+
+
+.fivth{
+    width: 100%;
+    height: 90vh;
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: 40% 43%;
+    grid-template-rows: 90%;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.fivth .left{
+    position: relative;
+    top: 10%;
+}
+
+.fivth .left .api-1{
+    position: absolute;
+    height: 70%;
+}
+
+.fivth .left .api-2{
+    position: absolute;
+    height: 70%;
+    top: 1%;
+    left: 2%;
+}
+
+.fivth .left .thumb1{
+    position: relative;
+    /* border: 1px solid red; */
+    width: 45px;
+    height: 45px;
+    top: 18%;
+    left: 29%;
+    overflow: hidden;
+}
+
+.fivth .left .thumb1 .api-4{
+    position: absolute;
+    height: 80%;
+    bottom: -200%;
+    left: -30%;
+    animation: thm1 3s linear infinite;
+    
+}
+
+@keyframes thm1{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.fivth .left .thumb1 .api-3{
+    position: absolute;
+    height: 70%;
+    bottom: -200%;
+    left: 20%;
+    animation: thm1 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes thm1{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.fivth .left .thumb2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 9%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.fivth .left .thumb2 .api-3{
+    position: absolute;
+    height: 70%;
+    bottom: -200%;
+    left: 20%;
+    animation: thm2 3s linear infinite;
+}
+
+@keyframes thm2{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.fivth .left .thumb2 .api-4{
+    position: absolute;
+    height: 70%;
+    bottom: -200%;
+    left: -30%;
+    animation: thm2 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+    @keyframes thm2{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.fivth .right{
+    display: grid;
+    grid-template-rows: 14% 40% 20%;
+    align-content: center;
+}
+.fivth .right  h1{
+    font-size: 1.8rem;
+}
+
+.fivth .right p{
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.fivth .right button{
+    width: 26%;
+    height: 8vh;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: #ffffff;
+    font-size: 1.1rem;
+    border-style: none;
+}
+
+
+
+
+
+
+.eight{
+    width: 100%;
+    height: 190vh;
+    position: relative;
+}
+
+.eight .pic{
+    width: 95%;
+    height: 70vh;
+    position: relative;
+    top: 10vh;
+}
+
+.eight .pic .hero{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+}
+
+.eight .pic .line{
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 40vh;
+    left: 6%;
+    overflow: hidden;
+}
+
+.eight .pic .line .line-1{
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    animation: lin 6s linear infinite;
+}
+
+.eight .pic .line .im1{
+    animation-delay: 3s;
+}
+
+
+@keyframes lin{
+    0%{
+       transform: translate(0%);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
+
+.eight .pic .dots{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 21%;
+    top: 15vh;
+}
+
+.eight .pic .dots .dot{
+    color: rgb(252, 182, 205);
+    font-size: 5rem;
+    top: -70%;
+}
+
+.eight .pic .dots .dot2{
+    position: absolute;
+    top: -50%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot3{
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot4{
+    position: absolute;
+    top: -30%;
+    color: rgb(212, 175, 247);
+}
+
+.eight .pic .dots .dot5{
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot6{
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot7{
+    position: absolute;
+    top: -10%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot8{
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    color: rgb(208, 126, 247);
+}
+
+.eight .pic .dots .dot9{
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    color: rgb(0, 255, 170);
+}
+
+.eight .pic .dots .dot10{
+    position: absolute;
+    top: -10%;
+    left: 60%;
+    border-radius: 50%;
+    color: rgb(179, 247, 247);
+}
+
+
+.eight .pic .dots1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 0%;
+    top: 4vh;
+}
+
+.eight .pic .talk1{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 3%;
+    left: 22%;
+    z-index: -1;
+    animation: up1 3s linear infinite;
+}
+
+@keyframes up1{
+    0%{
+        top: 3%;
+    }
+    50%{
+        top: 6%;
+    }
+    100%{
+        top: 3%;
+    }
+}
+
+.eight .pic .talk2{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 35%;
+    left: 40%;
+    z-index: -1;
+    animation: up2 2.9s linear infinite;
+}
+
+@keyframes up2{
+    0%{
+        top: 35%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 35%;
+    }
+}
+
+.eight .pic .talk3{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 90%;
+    left: 0%;
+    animation: up3 2.5s linear infinite;
+}
+
+@keyframes up3{
+    0%{
+        top: 90%;
+    }
+    50%{
+        top: 93%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+.eight .pic .hori{
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    background: aqua;
+    position: relative;
+    top: 43%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.eight .pic .hori .lin{
+    width: 100%;
+    position: absolute;
+    top: 48%;
+   
+}
+
+.eight .pic .hori .srch{
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -4%;
+    z-index: 1;
+}
+
+.eight .pic .hori .spot{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: spot 1.7s linear infinite;
+}
+
+@keyframes spot{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+
+
+.eight .form{
+    width: 95%;
+    height: 110vh;
+    position: relative;
+    background: #E7FEF8;
+    top: 0;
+    left: 3%;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 30% 50% 10%;
+    align-content: center;
+    justify-items: center;
+}
+
+.eight .form .head{
+    display: grid;
+    grid-template-rows: 30% 60%;
+}
+
+.eight .form .head h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.eight .form .head p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.eight .form .table{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.eight .form .table .left{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .left input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+.eight .form .table .left h1{
+    font-size: 2rem;
+}
+
+.eight .form .table .right{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .right input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+
+
+.eight .form .footer{
+    width: 20%;
+    position: relative;
+}
+
+.eight .form .footer .btn4{
+    width: 100%;
+    height: 86%;
+    border-radius: 10px;
+    border-style: none;
+    background: #00B8A1;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.eight .form .footer .btn4:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.eight .form .footer .under-line{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+
+.eight .side{
+    width: 16%;
+    height: 65vh;
+    position: absolute;
+    top: 62%;
+    right: 0;
+}
+
+.eight .side .frame{
+    height: 100%;
+    position: absolute;
+}
+
+.eight .side .upper{
+    height: 37%;
+    position: absolute;
+    top: 33%;
+    left: 9%;
+}
+
+.eight .side .float1{
+    height: 9%;
+    position: absolute;
+    top: 0;
+    left: 51%;
+    animation: flo 3s linear infinite;
+}
+
+@keyframes flo{
+    0%{
+        top: -1%;
+    }
+    50%{
+        top: 2%;
+    }
+    100%{
+        top: -1%;
+    }
+}
+
+.eight .side .float2{
+    height: 13%;
+    position: absolute;
+    top: 6%;
+    left: 65%;
+    animation: flo1 2.5s linear infinite;
+}
+
+@keyframes flo1{
+    0%{
+        top: 6%;
+    }
+    50%{
+        top: 9%;
+    }
+    100%{
+        top: 6%;
+    }
+}
+
+.eight .side .float3{
+    height: 10%;
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    animation: flo2 2.3s linear infinite;
+}
+
+@keyframes flo2{
+    0%{
+        top: 11%;
+    }
+    50%{
+        top: 13%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+
+
+  
+
+
+
+
+.ninth{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40% 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.ninth .head{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 30% 40%;
+}
+
+.ninth .head .logo{
+    position: relative;
+    left: 30%;
+}
+
+.ninth .head .logo .seal{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.ninth .head .text{
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    position: relative;
+    /* justify-items: center; */
+}
+
+.ninth .head .text .logo{
+    height: 11%;
+}
+
+.ninth .head .text p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.ninth .head .text .social{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninth .head .text .social i{
+    padding: 16px 20px;
+    width: 14%;
+    height: 17%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0pc #A2FDE9;
+    color: #00C8AF;
+    font-size: 1.1rem;
+}
+
+.ninth .head .text .social i:hover{
+    background: black;
+    color: #A2FDE9;
+    transition: 1s;
+}
+
+
+
+.ninth .footer{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 90%;
+}
+
+.ninth .footer .box{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    align-content: space-between;
+}
+
+.ninth .footer .box h1{
+    font-size: 1.1rem;
+}
+
+.ninth .footer .box h2{
+    font-size: .9rem;
+}
+
+
+
+
+
+
+.designer{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 40% 25%;
+    justify-content: space-between;
+}
+
+.designer p{
+    position: relative;
+    left: 10%;
+}
+
+.designer h5{
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.designer span{
+    font-size: .9rem;
+}
+
+.designer span:hover{
+    color: #00B8A1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

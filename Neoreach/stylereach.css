@@ -1,0 +1,2600 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.first{
+    width: 100%;
+    height: 20vh;
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 45% 25%;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.first .logo{
+    /* border: 1px solid rgb(126, 12, 97);r */
+    display: grid;
+}
+
+.logo img{
+    width: 70%;
+    height: 100%;
+}
+
+
+.first ul{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 20% 20% 24% 18% 18%;
+}
+
+.first ul li{
+    /* border: 1px solid green; */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+ul li a{
+    text-decoration: none;
+    /* border: 1px solid green; */
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+ul li a::after{
+     content: '';
+     width: 100%;
+     height: 50%;
+     background-image: url(underline@2x.png);
+     background-size: 100% 100%;
+     position: absolute;
+     top: 50%;
+     left: -100%;
+     z-index: -1;
+     transition: 1s;
+}
+
+ul li a:hover::after{
+    left: 0;
+    transition: 1s;
+}
+ 
+
+.first .btn{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: 30% 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.btn h1{
+    /* border: 1px solid green; */
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.btn h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn button{
+    background: #00B8A1;
+    width: 70%;
+    height: 40%;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border-style: none;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn img{
+    position: absolute;
+    z-index: -1;
+    width: 35%;
+    height: 40%;
+    top: 40%;
+    left: 49%;
+}
+
+
+
+
+
+.second{
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 30% 68%;
+    grid-template-rows: 90%;
+    justify-content: end;
+    align-content: end;
+}
+
+.second .text{
+    /* border: 1px solid rgb(128, 68, 0); */
+    display: grid;
+    grid-template-rows: 20% 15% 25% 20%;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.second .text h1{
+    /* border: 1px solid red; */
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: bold;
+}
+
+.second .text p{
+    /* border: 1px solid rgb(0, 89, 255); */
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+.second .text button{
+    /* border: 1px solid rgb(140, 0, 255); */
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    background: rgb(0, 184, 161);
+    color: white;
+    border-style: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 10%;
+}
+
+.second .text button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.second .text h3{
+    /* border: 1px solid red; */
+    font-size: 15px;
+}
+
+.second .text img{
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    height: 14%;
+    top: 52%;
+    left: 7%;
+}
+
+
+.second .pic{
+    /* border: 1px solid rgb(19, 0, 128); */
+    position: relative;
+    overflow: hidden;
+}
+
+.pic .img1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(circle-orange@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+     top: 5%;
+}
+
+.pic .img2{
+    width: 450px;
+    height: 450px;
+    background-image: url(hero-base1@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5%;
+}
+
+
+
+.pic .img3{
+    width: 200px;
+    height: 50px;
+    background-image: url(talk-bubble@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 37%;
+    top:19%;
+    z-index: 1;
+    animation: up 2s linear infinite;
+}
+
+@keyframes up{
+    0%{
+        top: 19%;
+    }
+    50%{
+        top: 22%;
+    }
+    100%{
+        top: 19%;
+    }
+}
+
+
+.pic .img4{
+    width: 200px;
+    height: 50px;
+    background-image: url(talk-bubble@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 5%;
+    top: 75%;
+    animation: down 2s linear infinite;
+}
+
+@keyframes down{
+    0%{
+        top: 75%;
+    }
+    50%{
+        top: 80%;
+    }
+  
+    100%{
+        top: 75%;
+    }
+}
+
+
+.pic .img5{
+    width: 130px;
+    height: 230px;
+    background-image: url(ornament2.svg);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: -6%;
+    transform: rotate(-100deg);
+}
+
+
+.pic .imghorn{
+    width: 60px;
+    height: 60px;
+    background-image: url(bullhorn@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 35%;
+    top: 64%;
+}
+
+.pic .imghorn2{
+    width: 60px;
+    height: 30px;
+    background-image: url(horn-lines.svg);
+    background-size: 100% 100%;
+    transform: rotate(-28deg);
+    position: absolute;
+    left: 39%;
+    top: 65%;
+    z-index: 1;
+    animation: opa 2s linear infinite;
+}
+
+@keyframes opa{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+  
+  
+    
+}
+
+
+
+
+.pic .img6{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-girl@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat1 6s linear infinite;
+    /* animation-delay: 2s; */
+    z-index: -1;
+}
+
+@keyframes animat1{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+
+
+.pic .img7{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-boy@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat2 6s linear infinite;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+@keyframes animat2{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+
+.pic .img8{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-girl@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat3 6s linear infinite;
+    animation-delay: 2s;
+    z-index: -1;
+}
+
+@keyframes animat3{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+.pic .img9{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-boy@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat4 6s linear infinite;
+    animation-delay: 3s;
+    z-index: -1;
+}
+
+@keyframes animat4{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+.pic .img10{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-girl@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat5 6s linear infinite;
+    animation-delay: 4s;
+    z-index: -1;
+}
+
+@keyframes animat5{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+.pic .img11{
+    width: 110px;
+    height: 160px;
+    background-image: url(card-boy@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20%;
+    top: 44%;
+    animation: animat6 6s linear infinite;
+    animation-delay: 5s;
+    z-index: -1;
+}
+
+@keyframes animat6{
+    0%{
+        left: 20%;
+    }
+    100%{
+        left: 110%;
+    }
+}
+
+
+
+
+
+
+
+ .pic .img12{
+    width: 450px;
+    height: 450px;
+    background-image: url(hero-base2@2x.png);
+    background-size: 100% 100%;
+    position: absolute;
+     top: 0%;
+     left: 62%;
+}
+
+.pic .imgline{
+    width: 270px;
+    height: 50px;
+    position: absolute;
+     top: 52%;
+     left: 71%;
+     overflow: hidden;
+   
+}   
+
+.imgline img{
+position: absolute;
+height: 100%;
+left: 100%;
+animation: wave 6s linear infinite;
+
+}
+
+
+@keyframes wave{
+   0%{transform: translate(0%);
+
+   }
+
+   100%{
+    transform: translate(-200%);
+   }
+}
+
+.imgline .im1{
+    animation-delay: 3s;
+}
+
+
+.pic .cir{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    /* border: 1px solid green; */
+    left: 99%;
+    top:18%;
+    z-index: 1;
+}
+
+
+.pic .dots{
+    width: 75px;
+    height: 150px;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 91%;
+    top: 18%;
+}
+
+
+.pic .dots .dot{
+     position: absolute;
+     top: -40%;
+     font-size: 5rem;
+     animation: opa 2s linear infinite;
+}
+
+@keyframes opa{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.pic .dots .dot2{
+    top:-28%;
+    color: green;
+    animation-delay: 3s;
+}
+
+.pic .dots .dot3{
+    top:-28%;
+    left: 20%;
+    color: darkolivegreen;
+    animation-delay: 3s;
+}
+
+.pic .dots .dot4{
+    top: -16%;  
+    animation-delay: 1s; 
+}
+
+.pic .dots .dot5{
+    top:-16%;
+    left: 20%;
+    color: darkgoldenrod;
+    animation-delay: 2s;
+}
+
+.pic .dots .dot6{
+    top:-16%;
+    left: 40%;
+    color: cadetblue;
+    animation-delay: 3s;
+}
+
+.pic .dots .dot7{
+    top: -4%;
+    color: burlywood;
+    animation-delay: 1s;
+}
+
+.pic .dots .dot8{
+    top: -4%;
+    left: 20%;
+    color: red;
+    animation-delay: 3s;
+}
+
+.pic .dots .dot9{
+    top: -4%;
+    left: 40%;
+    color: blueviolet;
+    animation-delay: 2s;
+}
+
+.pic .dots .dot10{
+    top: -4%;
+    left: 60%;
+    color: cyan;
+    animation-delay: 1s;
+}
+
+.pic .dots .dot11{
+    top: 8%;
+    color: green;
+    animation-delay: 2s;
+}
+
+.pic .dots .dot12{
+    top: 8%;
+    left: 20%;
+    color: pink;
+    animation-delay: 3s;
+}
+
+.pic .dots .dot13{
+    top: 20%;
+    color: aqua;
+    animation-delay: 2s;
+}
+ 
+.pic .dots .dot14{
+    top: 20%;
+    animation-delay: 1s;
+}
+
+.pic .dots .dot15{
+    top: 33%;
+    color: pink;
+    animation-delay: 2s;
+} 
+
+.pic .dots .dot16{
+    top: 33%;
+    left: 20%;
+    color: gold;
+    animation-delay: 1s;
+} 
+
+.pic .dots .dot17{
+    top: 33%;
+    left: 40%;
+    color: green;
+    animation-delay: 3s;
+} 
+
+.pic .dots .dot18{
+    top: 44%;
+    color: grey;
+    animation-delay: 1s;
+} 
+
+.pic .dots .dot19{
+    top: 44%;
+    left: 20%;
+    color: red;
+    animation-delay: 1.4s;
+} 
+
+
+.second .pic .hori{
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    /* background: aqua; */
+    position: relative;
+    top: 38%;
+    left: 68%;
+    /* overflow: hidden; */
+}
+
+.second .pic .hori .line{
+    width: 100%;
+    border: 1px solid;
+    position: absolute;
+    top: 48%;
+   
+}
+
+.second .pic .hori .srch{
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -4%;
+    z-index: 1;
+}
+
+.second .pic .hori .spot{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: spot1 3s linear infinite;
+}
+
+@keyframes spot1{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.third{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+}
+
+.third .logo{
+    width: 90%;
+    height: 20vh;
+    position: absolute;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    justify-content: center;
+    align-items: center;
+}
+
+ .third .logo .log1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+    overflow: hidden;
+ }
+   
+.third .logo .log1 img:hover{
+    transform: scale(1.4);
+    transition: 2s;
+}
+
+
+
+.third .cirl{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 12%;
+    left: -10%;
+}
+
+.third .center{
+    width: 50%;
+    height: 40vh;
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    display: grid;
+    grid-template-rows: 25% 30% 15% 15% 15%;
+}
+
+.center  img{
+    width: 100%;
+    height: 70%;
+}
+
+.center h1{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.center p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+.third .mid{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    top: 60%;
+    display: grid;
+    grid-template-columns: 40% 55%;
+    justify-content: end;
+}
+
+.third .mid .left{
+    display: grid;
+    grid-template-rows: 10% 15% 35% 20%;
+    align-content: space-evenly;
+}
+
+.third .mid .left h3{
+    font-size: medium;
+}
+
+.third .mid .left h1{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+
+.third .mid .left p{
+    line-height: 1.9em;
+}
+
+.third .mid .left button{
+    width: 27%;
+    height: 8vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    border-style: none;
+    z-index: 1;
+}
+
+.third .mid .left button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.third .mid .left .line{
+    height: 9%;
+    position: absolute;
+    top: 80%;
+    left: 85px;
+}
+
+.third .mid .right{
+    position: relative;
+}
+
+.third .mid .right .box{
+    width: 100%;
+    height: 100%;
+}
+
+.third .mid .right .upper{
+    width: 390px;
+    height: 320px;
+    background: #00B8A1;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+    z-index: 3;
+    overflow: hidden;
+}
+
+ .mid .right .upper .upper-1{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     bottom: -100%;
+     animation: top 4s linear infinite;
+     
+ }
+
+ @keyframes top{
+    0%{transform: translatey(0%);
+ 
+    }
+ 
+    100%{
+     transform: translatey(-200%);
+    }
+ }
+
+ .mid .right .upper .up2{
+    animation-delay: 2s;
+}
+
+
+.mid .right .square-1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    height: 35%;
+    z-index: -1;
+}
+
+.mid .right .square-2{
+    position: absolute;
+    top: 0%;
+    left: 73%;
+    height: 35%;
+    z-index: -1;
+}
+
+
+
+
+
+.forth{
+    width: 100%;
+    height: 190vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    overflow: hidden;
+}
+
+.forth .one{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 95%;
+    justify-content: space-around;
+    align-content: end;
+}
+
+.forth .one .left{
+    position: relative;
+}
+
+.one .left .dots{
+    width: 10%;
+    height: 10vh;
+    position: absolute;
+    left: 18%;
+}
+
+.one .left .dots .dot{
+    position: absolute;
+    top: -90%;
+    color: gray;
+    font-size: 5rem;
+    animation: opac 2s linear infinite;
+}
+
+.one .left .dots .dot-2{
+    top: -90%;
+    left: 25%;
+    color: cyan;
+    animation-delay: 3s;
+}
+
+.one .left .dots .dot-3{
+    top: -90%;
+    left: 50%;
+    color: lightsalmon;
+    animation-delay: 2.2s;
+}
+
+.one .left .dots .dot-4{
+    top: -90%;
+    left: 75%;
+    color: rgb(156, 92, 156);
+    animation-delay: 1s;
+}
+
+
+.one .left .dots .dot-5{
+    top: -60%;
+    color: rgb(88, 175, 88);
+    animation-delay: 2s;
+}
+
+.one .left .dots .dot-6{
+    top: -60%;
+    left: 25%;
+    color: rgb(136, 255, 0);
+    animation-delay: 3s;
+}
+
+.one .left .dots .dot-7{
+    top: -60%;
+    left: 50%;
+    color: rgb(178, 245, 241);
+    animation-delay: 3.2s;
+}
+
+.one .left .dots .dot-8{
+    top: -35%;
+    color: gray;
+    animation-delay: .3s;
+}
+
+.one .left .dots .dot-9{
+    top: -35%;
+    left: 25%;
+    color: rgb(194, 136, 145);
+    animation-delay: 3s;
+}
+
+.one .left .dots .dot-10{
+    top: -35%;
+    left: 50%;
+    color: green;
+    animation-delay: 1s;
+}
+
+.one .left .dots .dot-11{
+    top: -35%;
+    left: 75%;
+    color: rgb(0, 128, 96);
+    animation-delay: 2s;
+}
+
+@keyframes opac{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.one .left img{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 3%;
+    left: 0;
+}
+
+
+.one .left .dots-2{
+    position: absolute;
+    top: 27%;
+    left: 96%;
+}
+
+
+.one .left .dots-3{
+       position: absolute;
+       width: 10%;
+       height: 13vh;
+       top: 67%;
+       left: 1%;
+}
+
+.one .left .dots-3 .dot{
+    color: gray;
+    top: -90%;
+}
+
+.one .left .dots-3 .dot-5{
+    color: rebeccapurple;
+    top: -70%;
+    left: 25%;
+}
+
+.one .left .dots-3 .dot-6{
+    color: rgb(0, 247, 255);
+    top: -70%;
+    left: 50%;
+}
+
+.one .left .dots-3 .dot-7{
+    color: lightsalmon;
+    top: -70%;
+    left: 75%;
+}
+
+.one .left .dots-3 .dot-8{
+    color: rgb(247, 165, 178);
+    top: -50%;
+    left: 50%;
+}
+
+.one .left .dots-3 .dot-9{
+    color: rgb(0, 247, 255);
+    top: -50%;
+    left: 75%;
+}
+
+.one .left .dots-3 .dot-10{
+    color: rgb(147, 147, 212);
+    top: -30%;
+    left: 75%;
+}
+
+
+.one .left .dots-4{
+    position: absolute;
+    width: 10%;
+    height: 13vh;
+    top: 80%;
+    left: 1%;
+}
+
+.one .left .dots-4 .dot{
+    color: gray;
+    top: -90%;
+}
+
+.one .left .dots-4 .dot-5{
+    color: rebeccapurple;
+    top: -70%;
+    left: 25%;
+}
+
+.one .left .dots-4 .dot-6{
+    color: rgb(0, 247, 255);
+    top: -70%;
+    left: 50%;
+}
+
+.one .left .dots-4 .dot-7{
+    color: lightsalmon;
+    top: -70%;
+    left: 75%;
+}
+
+.one .left .dots-4 .dot-8{
+    color: rgb(247, 165, 178);
+    top: -50%;
+    left: 50%;
+}
+
+.one .left .dots-4 .dot-9{
+    color: rgb(0, 247, 255);
+    top: -50%;
+    left: 75%;
+}
+
+.one .left .dots-4 .dot-10{
+    color: rgb(147, 147, 212);
+    top: -30%;
+    left: 75%;
+}
+
+
+
+
+.forth .one .right{
+    display: grid;
+    grid-template-rows: 10% 15% 35% 20%;
+    align-content: center;
+    position: relative;
+}
+
+.forth .one .right h3{
+    font-size: medium;
+}
+
+.forth .one .right h1{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+
+.forth .one .right p{
+    line-height: 1.9em;
+}
+
+.forth .one .right button{
+    width: 25%;
+    height: 8vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    z-index: 1;
+    border-style: none;
+}
+
+.forth .one .right button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.forth .one .right .line{
+    position: absolute;
+    height: 7%;
+    top: 74%;
+    left: 5%;
+}
+
+
+
+
+
+.forth .two{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: 95%;
+    justify-content: end;
+    align-content: end;
+}
+
+
+.forth .two .left{
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 15% 35% 20%;
+    align-content: center;
+}
+
+.forth .two .left h3{
+    font-size: medium;
+}
+
+.forth .two .left h1{
+    font-size: 1.7rem;
+    line-height: 1.5em;
+}
+
+.forth .two .left p{
+    line-height: 1.9em;
+}
+
+.forth .two .left button{
+    width: 25%;
+    height: 8vh;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    border-style: none;
+    z-index: 1;
+}
+
+.forth .two .left button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.forth .two .left .line{
+    position: absolute;
+    height: 8%;
+    top: 73%;
+    left: 1%;
+}
+
+.forth .two .right{
+    position: relative;
+}
+
+.forth .two .right .main{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    height: 80%;
+}
+ 
+.forth .two .right .cirl{
+    position: absolute;
+    top: 15%;
+    left: 81%;
+    width: 200px;
+    height: 200px;
+    z-index: -3;
+} 
+
+.forth .two .right .ball{
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: 25%;
+      left: 83%;
+}
+
+.forth .two .right .upper{
+    position: absolute;
+    top: 47%;
+    left: 21%;
+    width: 435px;
+    height: 200px;
+    overflow: hidden;
+} 
+
+.forth .two .right .upper .graph{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.forth .two .right .upper .upper-1{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    right: -200%;
+    opacity: 0.3;
+    animation: wav 5s linear infinite;
+}
+
+@keyframes wav{
+    0%{
+        transform: translate(0%);
+    }
+ 
+    100%{
+     transform: translate(-99%);
+    }
+ }
+
+
+
+
+
+ .fivth{
+     width: 100%;
+     height: 160vh;
+     display: grid;
+     grid-template-rows: 50% 50%;
+     overflow: hidden;
+ }
+
+
+.fivth .text{
+    display: grid;
+    position: relative;
+    grid-template-rows: 35% 10% 30% 15%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.fivth .text .orna2{
+    height: 25%;
+    position: relative;
+    top: 20%;
+}
+
+.fivth .text h1{
+    font-size: 1.7rem;
+}
+
+.fivth .text p{
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+    text-align: center;
+}
+
+.fivth .text button{
+    border-style: none;
+    width: 23%;
+    height: 10vh;
+    border-radius: 10px;
+    background: #00B8A1;
+    color: white;
+    font-size: 1.3rem;
+    z-index: 1;
+}
+.fivth .text button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.fivth .text .line{
+    position: absolute;
+    height: 17%;
+    top: 84%;
+    left: 43%;
+}
+
+.fivth .pic{
+    position: relative;
+}
+
+.fivth .pic .ball-1{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+}
+
+.fivth .pic .ball-2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 8%;
+    left: 90%;
+    z-index: -1;
+}
+
+.fivth .pic .sm{
+    height: 28%;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+.fivth .pic .box{
+    height: 50%;
+    position: absolute;
+    top: 4%;
+    left: 23%;
+}
+
+.fivth .pic .ph-1{
+    height: 50%;
+    position: absolute;
+    top:20%;
+    left: 9%;
+}
+
+.fivth .pic .horn-1{
+    height: 18%;
+    position: absolute;
+    top:54%;
+    left: 22%;
+}
+
+.fivth .pic .orn2{
+    position: absolute;
+    height: 25%;
+    transform: rotate(76deg);
+    top: 60%;
+    left: 27%;
+}
+
+.fivth .pic .ph-2{
+    height: 60%;
+    position: absolute;
+    top:18%;
+    left: 44%;
+}
+
+.fivth .pic .horn-2{
+    height: 10%;
+    position: absolute;
+    top: 12%;
+    left: 61%;
+}
+
+.fivth .pic .sm-1{
+    height: 29%;
+    position: absolute;
+    top: 29%;
+    left: 62%;
+}
+
+.fivth .pic .sm-2{
+    height: 29%;
+    position: absolute;
+    top: 34%;
+    left: 68%;
+}
+
+.fivth .pic .paper{
+    height: 17%;
+    position: absolute;
+    top: 57%;
+    left: 74%;
+}
+
+.fivth .pic .orn3{
+    position: absolute;
+    height: 22%;
+    transform: rotate(130deg);
+    top: 58%;
+    left: 67%;
+}
+
+.fivth .pic .ph-3{
+    height: 60%;
+    position: absolute;
+    top:10%;
+    left: 79%;
+}
+
+
+
+
+
+.sixth{
+    width: 100%;
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.sixth .left{
+    display: grid;
+    grid-template-rows: 45% 40%;
+    /* justify-content: space-evenly; */
+}
+
+.sixth .left .pic{
+    background: #FFE8C6;
+    position: relative;
+}
+
+.sixth .left .pic .api-1{
+    position: absolute;
+    height: 100%;
+}
+
+.sixth .left .pic .api-2{
+    position: absolute;
+    height: 100%;
+    top: 1%;
+    left: 1%;
+}
+
+.sixth .left .pic .thumb1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 28%;
+    overflow: hidden;
+}
+
+.sixth .left .pic .thumb1 .api-4{
+    position: absolute;
+    height: 80%;
+    bottom: -200%;
+    left: -30%;
+    animation: thm1 3s linear infinite;
+    
+}
+
+@keyframes thm1{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.sixth .left .pic .thumb1 .api-3{
+    position: absolute;
+    height: 80%;
+    bottom: -200%;
+    left: 20%;
+    animation: thm1 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes thm1{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.sixth .left .pic .thumb2{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 11%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.sixth .left .pic .thumb2 .api-3{
+    position: absolute;
+    height: 80%;
+    bottom: -200%;
+    left: 20%;
+    animation: thm2 3s linear infinite;
+}
+
+@keyframes thm2{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+.sixth .left .pic .thumb2 .api-4{
+    position: absolute;
+    height: 80%;
+    bottom: -200%;
+    left: -30%;
+    animation: thm2 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes thm2{
+    0%{
+        bottom: -200;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+
+
+.sixth .left .text{
+    background: #FFE8C6;
+    display: grid;
+    grid-template-rows: 20% 70%;
+}
+
+.sixth .left .text h1{
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.sixth .left .text p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2.3rem;
+}
+
+
+
+.sixth .right{
+    /* border: 2px solid rgb(5, 3, 24); */
+    display: grid;
+    grid-template-rows: 45% 40%;
+    align-content: end;
+    background: #FFE8EB;
+}
+
+.sixth .right .pic{
+    position: relative;
+}
+
+
+.sixth .right .pic .api-1{
+    height: 90%;
+    position: absolute;
+}
+
+.sixth .right .pic .vib{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: url(api2-dot.svg);
+    position: relative;
+    top: 13%;
+    left: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth .right .pic .vib::before{
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 50%;
+    animation: vib 3s linear infinite;
+}
+
+.sixth .right .pic .vib::after{
+    position: absolute;
+    content: '';
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    box-shadow: 0 0 30px blueviolet;
+    border-radius: 50%;
+    animation: vib 3s linear infinite;
+    animation-delay: 1.5s;
+}
+
+
+
+@keyframes vib{
+    0%{
+        transform: scale(0.5); opacity:0;
+    }
+
+    50%{
+        transform: scale(1); opacity:1;
+    }
+
+    100%{
+        transform: scale(1.5); opacity:0;
+    }
+}
+
+
+.sixth .right .pic .facbok{
+    height: 7%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: fb 2.5s linear infinite;
+}
+
+@keyframes fb{
+     0%{
+      top:10%;
+     }
+
+     25%{
+        top:15%; left: 5%;
+        }
+
+     50%{
+      top:20%; left: 5%;
+      }
+      75%{
+          top: 17%; left:10%;
+      }
+     100%{
+        top:15%;  left: 10%;
+          }   
+}
+
+
+.sixth .right .pic .utub{
+    height: 7%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation: you 4s linear infinite;
+}
+
+@keyframes you{
+     0%{
+      top:20%;
+     }
+
+     25%{
+        top:25%; left: 5%;
+        }
+
+     50%{
+      top:30%; left: 5%;
+      }
+      75%{
+          top: 17%; left:10%;
+      }
+     100%{
+        top:25%;  left: 10%;
+     }  
+}
+
+.sixth .right .pic .twtr{
+    height: 7%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    animation: twtr 3s linear infinite;
+}
+
+@keyframes twtr{
+     0%{
+      top:20%;
+     }
+
+     25%{
+        top:15%; left: 5%;
+        }
+
+     50%{
+      top:20%; left: 5%;
+      }
+      75%{
+          top: 17%; left:15%;
+      }
+     100%{
+        top:8%;  left: 10%;
+     }
+}
+
+.sixth .right .pic .insta{
+    height: 7%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    animation: insta 5s linear infinite;
+}
+
+@keyframes insta{
+     0%{
+      top:30%;
+     }
+
+     25%{
+        top:25%; left: 5%;
+        }
+
+     50%{
+      top:30%; left: 5%;
+      }
+      75%{
+          top: 17%; left:10%;
+      }
+     100%{
+        top:25%;  left: 10%;
+     }  
+}
+
+
+
+
+.sixth .right .text{
+    display: grid;
+    grid-template-rows: 20% 70%;
+}
+
+.sixth .right .text h1{
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.sixth .right .text p{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2.3rem;
+}
+
+
+
+
+
+
+
+.sevnth{
+    width: 100%;
+    height: 150vh;
+    display: grid;
+    grid-template-rows: 20% 70%;
+    align-content: center;
+}
+
+.sevnth .text{
+    position: relative;
+    display: grid;
+    grid-template-columns: 63% 20%;
+    grid-template-rows: 80%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.sevnth .text .para{
+    display: grid;
+    grid-template-rows: 20% 50%;
+    align-content: space-around;
+}
+
+.sevnth .text .para h1{
+    font-size: 1.9rem;
+}
+
+.sevnth .text .para p{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+
+.sevnth .text button{
+    width: 85%;
+    height: 8vh;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #00B8A1;
+    color: aliceblue;
+    position: relative;
+    top: 10%;
+    z-index: 1;
+}
+.sevnth .text button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.sevnth .text .line{
+    position: absolute;
+    height:35%;
+    top: 19%;
+    left: 79%;
+}
+
+.sevnth  .boxes{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 90%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.sevnth .boxes .box{
+    border: 1px solid gray;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 10% 25% 30% 20%;
+    justify-items: center;
+    align-content: space-evenly;
+    position: relative;
+}
+
+.sevnth .boxes .box .logo{
+    height: 13%;
+}
+
+.sevnth .boxes .box p{
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.sevnth .boxes .box .square{
+    border-bottom: 1px solid gray;
+    display: grid;
+    width: 95%;
+    grid-template-columns: 50% 50%;
+
+}
+ 
+.sevnth .boxes .box .square .left{
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.sevnth .boxes .box .square .left img{
+    height: 35%;
+}
+
+.sevnth .boxes .box .square .left h1{
+    font-size: 2.1rem;
+}
+
+.sevnth .boxes .box .square .left p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+
+.sevnth .boxes .box .square .right{
+    border-left: 1px solid gray;
+    display: grid;
+    grid-template-rows: 30% 25% 35%;
+    justify-items: center;
+    align-content: space-around;
+}
+
+.sevnth .boxes .box .square .right img{
+    height: 35%;
+}
+
+.sevnth .boxes .box .square .right h1{
+    font-size: 2rem;
+}
+
+.sevnth .boxes .box .square .right p{
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+
+
+.sevnth .boxes .box button{
+    background: #00B8A1;
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+    top: 15%;
+    z-index: 1;
+}
+
+.sevnth .boxes .box button:hover{
+    background: black;
+    color: #00B8A1;
+    transition: 1s;
+}
+
+.sevnth .boxes .box .line{
+    position: absolute;
+    height: 7%;
+    top: 84%;
+    left: 37%;
+}
+
+
+.sevnth .boxes .box .btn{
+    width: 95%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-around;
+}
+
+.sevnth .boxes .box .btn .line{
+    position: absolute;
+    width: 40%;
+    height: 36%;
+    top: 34%;
+    left: 14%;
+}
+
+
+.sevnth .boxes .box .btn button{
+       position: relative;
+       top: 15%;
+       width: 88%;
+       height: 8vh;
+       border-style: none;
+}
+
+.sevnth .boxes .box .btn button:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.sevnth .boxes .box .btn .pic{
+    width: 100%;
+    background-image: url(play-btn@2x.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.sevnth .boxes .box .btn .pic .arow{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+
+
+.eight{
+    width: 100%;
+    height: 190vh;
+    position: relative;
+}
+
+.eight .pic{
+    width: 95%;
+    height: 70vh;
+    position: relative;
+    top: 10vh;
+}
+
+.eight .pic .hero{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+}
+
+.eight .pic .line{
+    width: 270px;
+    height: 50px;
+    position: absolute;
+    top: 40vh;
+    left: 6%;
+    overflow: hidden;
+}
+
+.eight .pic .line .line-1{
+    height: 100%;
+    position: absolute;
+    left: 100%;
+    animation: lin 6s linear infinite;
+}
+
+.eight .pic .line .im1{
+    animation-delay: 3s;
+}
+
+
+@keyframes lin{
+    0%{
+       transform: translate(0%);
+    }
+    100%{
+        transform: translate(-200%);
+    }
+}
+
+.eight .pic .dots{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 21%;
+    top: 15vh;
+}
+
+.eight .pic .dots .dot{
+    color: rgb(252, 182, 205);
+    font-size: 5rem;
+    top: -70%;
+}
+
+.eight .pic .dots .dot2{
+    position: absolute;
+    top: -50%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot3{
+    position: absolute;
+    top: -50%;
+    left: 20%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot4{
+    position: absolute;
+    top: -30%;
+    color: rgb(212, 175, 247);
+}
+
+.eight .pic .dots .dot5{
+    position: absolute;
+    top: -30%;
+    left: 20%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot6{
+    position: absolute;
+    top: -30%;
+    left: 40%;
+    color: rgb(252, 182, 205);
+}
+
+.eight .pic .dots .dot7{
+    position: absolute;
+    top: -10%;
+    color: rgb(179, 247, 247);
+}
+
+.eight .pic .dots .dot8{
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    color: rgb(208, 126, 247);
+}
+
+.eight .pic .dots .dot9{
+    position: absolute;
+    top: -10%;
+    left: 40%;
+    color: rgb(0, 255, 170);
+}
+
+.eight .pic .dots .dot10{
+    position: absolute;
+    top: -10%;
+    left: 60%;
+    border-radius: 50%;
+    color: rgb(179, 247, 247);
+}
+
+
+.eight .pic .dots1{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    transform: rotate(270deg);
+    left: 0%;
+    top: 4vh;
+}
+
+.eight .pic .talk1{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 3%;
+    left: 22%;
+    z-index: -1;
+    animation: up1 3s linear infinite;
+}
+
+@keyframes up1{
+    0%{
+        top: 3%;
+    }
+    50%{
+        top: 6%;
+    }
+    100%{
+        top: 3%;
+    }
+}
+
+.eight .pic .talk2{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 35%;
+    left: 40%;
+    z-index: -1;
+    animation: up2 2.9s linear infinite;
+}
+
+@keyframes up2{
+    0%{
+        top: 35%;
+    }
+    50%{
+        top: 40%;
+    }
+    100%{
+        top: 35%;
+    }
+}
+
+.eight .pic .talk3{
+    position: absolute;
+    width: 20%;
+    height: 13%;
+    top: 90%;
+    left: 0%;
+    animation: up3 2.5s linear infinite;
+}
+
+@keyframes up3{
+    0%{
+        top: 90%;
+    }
+    50%{
+        top: 93%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+.eight .pic .hori{
+    width: 300px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 30px;
+    background: aqua;
+    position: relative;
+    top: 43%;
+    left: 5%;
+    overflow: hidden;
+}
+
+.eight .pic .hori .lin{
+    width: 100%;
+    position: absolute;
+    top: 48%;
+   
+}
+
+.eight .pic .hori .srch{
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -4%;
+    z-index: 1;
+}
+
+.eight .pic .hori .spot{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: spot 1.7s linear infinite;
+}
+
+@keyframes spot{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+
+
+
+.eight .form{
+    width: 95%;
+    height: 110vh;
+    position: relative;
+    background: #E7FEF8;
+    top: 0;
+    left: 3%;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 30% 50% 10%;
+    align-content: center;
+    justify-items: center;
+}
+
+.eight .form .head{
+    display: grid;
+    grid-template-rows: 30% 60%;
+}
+
+.eight .form .head h1{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.eight .form .head p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.eight .form .table{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+}
+
+.eight .form .table .left{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .left input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+.eight .form .table .left h1{
+    font-size: 2rem;
+}
+
+.eight .form .table .right{
+    display: grid;
+    grid-template-rows: 22% 22% 22% 22%;
+}
+
+.eight .form .table .right input{
+    width: 90%;
+    height: 63%;
+    border-radius: 5px;
+    background: #fff;
+    border: 1px solid #000;
+    color: black;
+    padding: 2px 16px;
+    box-shadow: 6px 6px 0 #A2FDE9;
+}
+
+
+
+.eight .form .footer{
+    width: 20%;
+    position: relative;
+}
+
+.eight .form .footer .btn4{
+    width: 100%;
+    height: 86%;
+    border-radius: 10px;
+    border-style: none;
+    background: #00B8A1;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.eight .form .footer .btn4:hover{
+    background: black;
+    color: #00B8A1;
+}
+
+.eight .form .footer .under-line{
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+
+.eight .side{
+    width: 16%;
+    height: 65vh;
+    position: absolute;
+    top: 62%;
+    right: 0;
+}
+
+.eight .side .frame{
+    height: 100%;
+    position: absolute;
+}
+
+.eight .side .upper{
+    height: 37%;
+    position: absolute;
+    top: 33%;
+    left: 9%;
+}
+
+.eight .side .float1{
+    height: 9%;
+    position: absolute;
+    top: 0;
+    left: 51%;
+    animation: flo 3s linear infinite;
+}
+
+@keyframes flo{
+    0%{
+        top: -1%;
+    }
+    50%{
+        top: 2%;
+    }
+    100%{
+        top: -1%;
+    }
+}
+
+.eight .side .float2{
+    height: 13%;
+    position: absolute;
+    top: 6%;
+    left: 65%;
+    animation: flo1 2.5s linear infinite;
+}
+
+@keyframes flo1{
+    0%{
+        top: 6%;
+    }
+    50%{
+        top: 9%;
+    }
+    100%{
+        top: 6%;
+    }
+}
+
+.eight .side .float3{
+    height: 10%;
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    animation: flo2 2.3s linear infinite;
+}
+
+@keyframes flo2{
+    0%{
+        top: 11%;
+    }
+    50%{
+        top: 13%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+
+
+  
+
+
+
+
+.ninth{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40% 50%;
+    align-content: center;
+    justify-items: center;
+}
+
+.ninth .head{
+    width: 99%;
+    display: grid;
+    grid-template-columns: 30% 40%;
+}
+
+.ninth .head .logo{
+    position: relative;
+    left: 30%;
+}
+
+.ninth .head .logo .seal{
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.ninth .head .text{
+    display: grid;
+    grid-template-rows: 30% 30% 40%;
+    position: relative;
+    /* justify-items: center; */
+}
+
+.ninth .head .text .logo{
+    height: 11%;
+}
+
+.ninth .head .text p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.ninth .head .text .social{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ninth .head .text .social i{
+    padding: 16px 20px;
+    width: 14%;
+    height: 17%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0pc #A2FDE9;
+    color: #00C8AF;
+    font-size: 1.1rem;
+}
+
+.ninth .head .text .social i:hover{
+    background: black;
+    color: #A2FDE9;
+    transition: 1s;
+}
+
+
+
+.ninth .footer{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 90%;
+}
+
+.ninth .footer .box{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 15%;
+    align-content: space-between;
+}
+
+.ninth .footer .box h1{
+    font-size: 1.1rem;
+}
+
+.ninth .footer .box h2{
+    font-size: .9rem;
+}
+
+
+
+
+
+
+.designer{
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 40% 25%;
+    justify-content: space-between;
+}
+
+.designer p{
+    position: relative;
+    left: 10%;
+}
+
+.designer h5{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.designer span{
+    font-size: 1.1rem;
+}
+
+.designer span:hover{
+    color: #00B8A1;
+}
+
+
+
